@@ -6,7 +6,7 @@ HTML5 player should be enabled for you browser. See **[Note](#Note)** for more d
  
 ## Steps
 1. Show **Bookmarks Bar** (Chrome) or **Favorites Bar** (Safari) in your browser (<kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>B</kbd>).
-2. Drag and drop this link [Remove Dnvod Ad](javascript:(function(){document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);})();) into the **Bar** so that you have a new bookmark named *Remove Dnvod Ad* just created.
+2. Drag and drop this link <a name="tool" href="javascript:(function(){document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);})();">___Remove Dnvod Ad___</a> (this should be a link but apprently GitHub blocks such links in markdown files... so please go [here](https://bit.ly/remove-dnvod-ad) for an HTML page with the working link) into the **Bar** so that you have a new bookmark named *Remove Dnvod Ad* just created.
 2. Click the new bookmark when you need to remove the ad from a dnvod video page.
 
 ## Explanation
@@ -31,4 +31,4 @@ This is pretty straightforward. The tricky part is how to run the code above wit
 
 ## Acknowledgment
 Thanks to [JBWKZsf](https://github.com/JBWKZsf) and [kevinscake](https://github.com/kevinscake) for testing!
-This tool is inspired by http://zythum.free.bg/youkuhtml5playerbookmark/ 
+This tool is inspired by [YouKu HTML5 Player](http://zythum.free.bg/youkuhtml5playerbookmark/). 
