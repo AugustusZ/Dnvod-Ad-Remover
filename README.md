@@ -1,4 +1,5 @@
-# Remove Dnvod Ad
+# Dnvod Ad Remover
+This is a tool created to remove ad on www.dnvod.tv.
 
 ## Prerequisites
 HTML5 player should be enabled for you browser. See **[Note](#Note)** for more details. 
@@ -25,8 +26,9 @@ This is pretty straightforward. The tricky part is how to run the code above wit
 ## Note
 1. Since the way an ad is shown is subject to change, this tool might not work forever. Make good use of it before it's gone.
 2. This tool only works with HTML5 player. So if it did not work in your Chrome,
-	- Update Chrome to the latest version and make sure to disable Flash player so that HTML5 player is automatically enabled and this tool would work hopefully. The way to disable Flash in Chrome: Go to **Settings** | Show **Advanced** settings | **Privacy and security** | **Content settings** | **Flash**, OR simply search "Flash" in **Settings**, then **Block sites from running Flash** and restart your browser. It you are not willing to block, try **Ask first**. 
+	- Update Chrome to the latest version and make sure to disable Flash player so that HTML5 player is automatically enabled and this tool would work hopefully. The way to disable Flash in Chrome: Go to **Settings** | Show **Advanced** settings | **Privacy and security** | **Content settings** | **Flash**, OR simply search "Flash" in **Settings**, then **Block sites from running Flash** and restart your browser. If you are not willing to block, try **Ask first**. 
 	- OR install Google Chrome Canary.
 
 ## Acknowledgment
 Thanks to [JBWKZsf](https://github.com/JBWKZsf) and [kevinscake](https://github.com/kevinscake) for testing!
+This tool is inspired by http://zythum.free.bg/youkuhtml5playerbookmark/ 
