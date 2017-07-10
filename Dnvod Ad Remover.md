@@ -1,7 +1,7 @@
 # Dnvod Ad Remover
 This is a tool created to remove ad on www.dnvod.tv.
 
-## What it can do?
+## What can it do?
 
 1. Remove Ad from current dnvod.tv video page
 2. Autoplay the video
