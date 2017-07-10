@@ -1,15 +1,17 @@
 # Dnvod Ad Remover
 This is a tool created to remove ad on www.dnvod.tv.
 
-## Prerequisites
-HTML5 player should be enabled for you browser. See **[Note](#Note)** for more details. 
- 
-## Steps
-1. Show **Bookmarks Bar** (Chrome) or **Favorites Bar** (Safari) in your browser (<kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>B</kbd>).
-2. Drag and drop this link <a name="tool" href="javascript:(function(){document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);})();">___Remove Dnvod Ad___</a> (this should be a link but apprently GitHub blocks such links in markdown files... so please go [here](https://bit.ly/remove-dnvod-ad) for an HTML page with the working link) into the **Bar** so that you have a new bookmark named *Remove Dnvod Ad* just created.
-2. Click the new bookmark when you need to remove the ad from a dnvod video page.
+## Installation and Usage
+
+Please go see [this page](https://augustusz.github.io/Dnvod-Ad-Remover/).
 
 ## Explanation
+
+This tool does three things.
+
+### 1. Remove Ad
+
+
 You can find the ad in the DOM element `div.HTML5-only`. So my approach is simply removing its child element `div.ads-control` from it:
 
 	var parentNode = document.getElementsByClassName("HTML5-only")[0];
@@ -20,15 +22,39 @@ A more concise version:
 
 	document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);
 	
-This is pretty straightforward. The tricky part is how to run the code above within a webpage.
+### 2. Autoplay
 
-<a name="Note"></a>
-## Note
-1. Since the way an ad is shown is subject to change, this tool might not work forever. Make good use of it before it's gone.
-2. This tool only works with HTML5 player. So if it did not work in your Chrome,
-	- Update Chrome to the latest version and make sure to disable Flash player so that HTML5 player is automatically enabled and this tool would work hopefully. The way to disable Flash in Chrome: Go to **Settings** | Show **Advanced** settings | **Privacy and security** | **Content settings** | **Flash**, OR simply search "Flash" in **Settings**, then **Block sites from running Flash** and restart your browser. If you are not willing to block, try **Ask first**. 
-	- OR install Google Chrome Canary.
+It starts playing the video so that users do not have to click the play button by their own:
+
+	document.getElementById('video').getElementsByTagName('video')[0].play();
+
+### 3. Fullscreen
+
+It makes the player enter fullscreen mode so that users do not have to click the fullscreen button by their own:
+
+	document.getElementById('video').getElementsByTagName('video')[0].webkitRequestFullScreen();
+
+## Code 
+
+Code lies in the value of `href` attribute of the `<a>` element:
+	
+	javascript: (function() {
+	    var p = document.getElementById('video').getElementsByTagName('video')[0];
+	    p.play();
+	    p.webkitRequestFullScreen();
+	    document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);
+	})();
+	
+## Update
+
+- 20170615: automatically start playing while removing the ad.
+- 20170623: automatically enter fullscreen mode while removing the ad.
 
 ## Acknowledgment
+
 Thanks to [JBWKZsf](https://github.com/JBWKZsf) and [kevinscake](https://github.com/kevinscake) for testing!
 This tool is inspired by [YouKu HTML5 Player](http://zythum.free.bg/youkuhtml5playerbookmark/). 
+
+## License 
+
+MIT
