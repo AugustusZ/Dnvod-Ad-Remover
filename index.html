@@ -516,60 +516,33 @@ div.prism-show-language > div.prism-show-language-label {
 
 <p>This is a tool created to remove ad on <a href="http://www.dnvod.tv">www.dnvod.tv</a>.</p>
 
-<h2 id="toc_1">Prerequisites</h2>
-
-<p>HTML5 player should be enabled for your browser. See <strong><a href="#Note">Note</a></strong> for more details. </p>
-
-<h2 id="toc_2">Steps</h2>
+<h2 id="toc_1">What it can do?</h2>
 
 <ol>
-<li>Show <strong>Bookmarks Bar</strong> (Chrome) or <strong>Favorites Bar</strong> (Safari) in your browser (<kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>B</kbd>).</li>
-<li>Drag and drop this link <a href="javascript:(function(){var p=document.getElementById('video').getElementsByTagName('video')[0];p.play();p.webkitRequestFullScreen();document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);})();">Remove Dnvod Ad</a> into the <strong>Bar</strong> and you will have a new bookmark named <em>Remove Dnvod Ad</em> just created.</li>
-<li>Click the new bookmark when you need to remove the ad from a dnvod video page.</li>
+<li>Remove Ad from current dnvod.tv video page</li>
+<li>Autoplay the video</li>
+<li>Automatically full screen the video</li>
 </ol>
 
-<h2 id="toc_3">Explanation</h2>
+<h2 id="toc_2">How to install it?</h2>
 
-<p>This tool does three things.</p>
+<ol>
+<li><em>Prerequisites:</em> HTML5 player should be enabled for your browser. See <strong><a href="#Note">Note</a></strong> for more details. </li>
+<li>Show <strong>Bookmarks Bar</strong> (Chrome) or <strong>Favorites Bar</strong> (Safari) in your browser (<kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>B</kbd>).</li>
+<li>Drag and drop this link <a href="javascript:(function(){var p=document.getElementById('video').getElementsByTagName('video')[0];p.play();p.webkitRequestFullScreen();document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);})();">Remove Dnvod Ad</a> into the <strong>Bookmarks / Favorites Bar</strong> and you will have a new bookmark named <em>Remove Dnvod Ad</em> just created.</li>
+</ol>
 
-<h3 id="toc_4">1. Remove Ad</h3>
+<p><img src="install.gif" alt=""></p>
 
-<p>You can find the ad in the DOM element <code>div.HTML5-only</code>. So my approach is simply removing its child element <code>div.ads-control</code> from it:</p>
+<h2 id="toc_3">How to use it?</h2>
 
-<div><pre class="line-numbers"><code class="language-none">var parentNode = document.getElementsByClassName(&quot;HTML5-only&quot;)[0];
-var childNode = document.getElementsByClassName(&quot;ads-control&quot;)[0];
-parentNode.removeChild(childNode);</code></pre></div>
+<p>Just click the bookmark, whenever you need to remove the ad from a dnvod video page.</p>
 
-<p>A more concise version:</p>
-
-<div><pre class="line-numbers"><code class="language-none">document.getElementsByClassName(&#39;HTML5-only&#39;)[0].removeChild(document.getElementsByClassName(&#39;ads-control&#39;)[0]);</code></pre></div>
-
-<h3 id="toc_5">2. Autoplay</h3>
-
-<p>It starts playing the video so that users do not have to click the play button by their own:</p>
-
-<div><pre class="line-numbers"><code class="language-none">document.getElementById(&#39;video&#39;).getElementsByTagName(&#39;video&#39;)[0].play();</code></pre></div>
-
-<h3 id="toc_6">3. Fullscreen</h3>
-
-<p>It makes the player enter fullscreen mode so that users do not have to click the fullscreen button by their own:</p>
-
-<div><pre class="line-numbers"><code class="language-none">document.getElementById(&#39;video&#39;).getElementsByTagName(&#39;video&#39;)[0].webkitRequestFullScreen();</code></pre></div>
-
-<h2 id="toc_7">Code</h2>
-
-<p>Code lies in the value of <code>href</code> attribute of the <code>&lt;a&gt;</code> element:</p>
-
-<div><pre class="line-numbers"><code class="language-none">javascript: (function() {
-    var p = document.getElementById(&#39;video&#39;).getElementsByTagName(&#39;video&#39;)[0];
-    p.play();
-    p.webkitRequestFullScreen();
-    document.getElementsByClassName(&#39;HTML5-only&#39;)[0].removeChild(document.getElementsByClassName(&#39;ads-control&#39;)[0]);
-})();</code></pre></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fHzvfbwpcxU?rel=0" frameborder="0" allowfullscreen></iframe>
 
 <p><a name="Note"></a></p>
 
-<h2 id="toc_8">Note</h2>
+<h2 id="toc_4">Note</h2>
 
 <ol>
 <li>Since the way an ad is shown is subject to change, this tool might not work forever. Make good use of it before it&rsquo;s gone.</li>
@@ -581,14 +554,7 @@ parentNode.removeChild(childNode);</code></pre></div>
 </ul></li>
 </ol>
 
-<h2 id="toc_9">Update</h2>
-
-<ul>
-<li>20170615: automatically start playing while removing the ad.</li>
-<li>20170623: automatically enter fullscreen mode while removing the ad.</li>
-</ul>
-
-<h2 id="toc_10">Acknowledgment</h2>
+<h2 id="toc_5">Acknowledgment</h2>
 
 <p>Thanks to <a href="https://github.com/JBWKZsf">JBWKZsf</a> and <a href="https://github.com/kevinscake">kevinscake</a> for testing!
 This tool is inspired by <a href="http://zythum.free.bg/youkuhtml5playerbookmark/">YouKu HTML5 Player</a>. </p>
