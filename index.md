@@ -3,10 +3,10 @@ This is a tool created to remove ad on www.dnvod.tv.
 
 ## What can it do?
 
-1. Remove Ad from current dnvod.tv video page
-2. Autoplay the video
-3. Automatically full screen the video
- 
+1. **Remove Ad** from current dnvod.tv video page
+2. **Autoplay** the video
+3. **Auto-fullscreen** the video
+
 ## How to install it?
 
 0. *Prerequisites:* HTML5 player should be enabled for your browser. See **[Note](#Note)** for more details. 
@@ -15,14 +15,13 @@ This is a tool created to remove ad on www.dnvod.tv.
 
 ![](install.gif)
 
+P.S. If you don't like **auto-fullscreen**ing, drag and drop this link <a href="javascript:(function(){var p=document.getElementById('video').getElementsByTagName('video')[0];p.play();document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);})();">Just Remove DN Ad</a> instead.
+
 ## How to use it?
 
 Just click the bookmark, whenever you need to remove the ad from a dnvod video page.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fHzvfbwpcxU?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-
 	
 <a name="Note"></a>
 ## Note
