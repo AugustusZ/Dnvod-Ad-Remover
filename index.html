@@ -514,29 +514,42 @@ div.prism-show-language > div.prism-show-language-label {
 
 <h1 id="toc_0">Dnvod Ad Remover</h1>
 
-<p>This is a tool created to remove ad on <a href="http://www.dnvod.tv">www.dnvod.tv</a>.</p>
+<p><img src="assets/promo1.jpg" alt="">
+<img src="assets/promo2.jpg" alt=""></p>
 
-<h2 id="toc_1">What can it do?</h2>
+<p>It removes the ads from dnvod.tv video pages. There are two versions of it and you can choose whichever you prefer:</p>
 
 <ol>
-<li><strong>Remove Ad</strong> from current dnvod.tv video page</li>
-<li><strong>Autoplay</strong> the video</li>
-<li><strong>Auto-fullscreen</strong> the video</li>
+<li><a href="https://chrome.google.com/webstore/detail/dnvod-ad-remover/iogpccakojnbjlglnkbmkgafekcokcjk?hl=en-US"><strong>Chrome Extension</strong></a> (<em>Recommended</em>)</li>
+<li>Browser Bookmark (See below sections for details)</li>
 </ol>
 
-<h2 id="toc_2">How to install it?</h2>
+<hr>
+
+<h1 id="toc_1">Chrome Extension Version</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XLOxEA0Fxrk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/dnvod-ad-remover/iogpccakojnbjlglnkbmkgafekcokcjk?hl=en-US">Extension on Chrome Web Store</a></li>
+<li><a href="dnvod-ad-remover-chrome-extension">Repository on GitHub</a></li>
+</ul>
+
+<hr>
+
+<h1 id="toc_2">Browser Bookmark Version</h1>
+
+<h2 id="toc_3">How to install it?</h2>
 
 <ol>
 <li><em>Prerequisites:</em> HTML5 player should be enabled for your browser. See <strong><a href="#Note">Note</a></strong> for more details. </li>
 <li>Show <strong>Bookmarks Bar</strong> (Chrome) or <strong>Favorites Bar</strong> (Safari) in your browser (<kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>B</kbd>).</li>
-<li>Drag and drop this link <a href="javascript:(function(){var p=document.getElementById('video').getElementsByTagName('video')[0];p.play();p.webkitRequestFullScreen();document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);})();">Remove Dnvod Ad</a> into the <strong>Bookmarks / Favorites Bar</strong> and you will have a new bookmark named <em>Remove Dnvod Ad</em> just created.</li>
+<li>Drag and drop this link <a href="javascript:(function(){var p=document.getElementById('video').getElementsByTagName('video')[0];p.play();document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);})();">Remove Dnvod Ad</a> into the <strong>Bookmarks / Favorites Bar</strong> and you will have a new bookmark named <em>Remove Dnvod Ad</em> just created.</li>
 </ol>
 
-<p><img src="install.gif" alt=""></p>
+<p><img src="assets/install.gif" alt=""></p>
 
-<p>P.S. If you don&rsquo;t like <strong>auto-fullscreen</strong>ing, drag and drop this link <a href="javascript:(function(){var p=document.getElementById('video').getElementsByTagName('video')[0];p.play();document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);})();">Just Remove DN Ad</a> instead.</p>
-
-<h2 id="toc_3">How to use it?</h2>
+<h2 id="toc_4">How to use it?</h2>
 
 <p>Just click the bookmark, whenever you need to remove the ad from a dnvod video page.</p>
 
@@ -544,19 +557,20 @@ div.prism-show-language > div.prism-show-language-label {
 
 <p><a name="Note"></a></p>
 
-<h2 id="toc_4">Note</h2>
+<h2 id="toc_5">Note</h2>
 
 <ol>
 <li>Since the way an ad is shown is subject to change, this tool might not work forever. Make good use of it before it&rsquo;s gone.</li>
 <li>This tool only works with HTML5 player. So if it did not work in your Chrome,
 
 <ul>
-<li>Update Chrome to the latest version and make sure to disable Flash player so that HTML5 player is automatically enabled and this tool would work hopefully. The way to disable Flash in Chrome: Go to <strong>Settings</strong> | Show <strong>Advanced</strong> settings | <strong>Privacy and security</strong> | <strong>Content settings</strong> | <strong>Flash</strong>, OR simply search <q>Flash</q> in <strong>Settings</strong>, then <strong>Block sites from running Flash</strong> and restart your browser. If you are not willing to block, try <strong>Ask first</strong>. </li>
+<li>Update Chrome to the latest version and make sure to disable Flash player so that HTML5 player is automatically enabled and this tool would work hopefully. The way to disable Flash in Chrome: Go to <strong>Settings</strong> | Show <strong>Advanced</strong> settings | <strong>Privacy and security</strong> | <strong>Content settings</strong> | <strong>Flash</strong>, OR simply search <q>Flash</q> in <strong>Settings</strong>, then <strong>Block sites from running Flash</strong> and restart your browser. 
+<img src="assets/block-flash.png" alt=""></li>
 <li>OR install Google Chrome Canary.</li>
 </ul></li>
 </ol>
 
-<h2 id="toc_5">Acknowledgment</h2>
+<h2 id="toc_6">Acknowledgment</h2>
 
 <p>Thanks to <a href="https://github.com/JBWKZsf">JBWKZsf</a> and <a href="https://github.com/kevinscake">kevinscake</a> for testing!
 This tool is inspired by <a href="http://zythum.free.bg/youkuhtml5playerbookmark/">YouKu HTML5 Player</a>. </p>

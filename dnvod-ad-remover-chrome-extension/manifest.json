@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dnvod Ad Remover",
+  "short_name": "NoDnAd",
+  "description": "This extension removes ads from dnvod.tv video pages",
+  "version": "1.0",
+
+  "icons": {
+      "128": "icon-128.png",
+      "48": "icon-48.png"
+  },
+
+  "content_scripts": [ {
+      "js": [ "dnvodAdRemover.js" ],
+      "matches": [ 
+        "http://dnvod.tv/*",
+        "http://www.dnvod.tv/*"
+      ],
+      "run_at": "document_end"
+  } ],
+
+  "permissions": [
+    "http://dnvod.tv/*",
+    "http://www.dnvod.tv/*"
+  ]
+}

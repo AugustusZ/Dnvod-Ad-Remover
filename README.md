@@ -1,13 +1,15 @@
 # Dnvod Ad Remover
+![](dnvod-ad-remover-chrome-extension/icon-128.png)
+
 This is a tool created to remove ad on www.dnvod.tv.
 
 ## Installation and Usage
 
-Please go see [this page](https://augustusz.github.io/Dnvod-Ad-Remover/).
+There are two versions: **Chrome Extension** and **Browser Bookmark**. Please go see them on [this page](https://augustusz.github.io/Dnvod-Ad-Remover/).
 
 ## Explanation
 
-This tool does three things.
+This tool does <s>three</s> two things.
 
 ### 1. Remove Ad
 
@@ -28,15 +30,18 @@ It starts playing the video so that users do not have to click the play button b
 
 	document.getElementById('video').getElementsByTagName('video')[0].play();
 
+<s>
 ### 3. Fullscreen
 
 It makes the player enter fullscreen mode so that users do not have to click the fullscreen button by their own:
 
 	document.getElementById('video').getElementsByTagName('video')[0].webkitRequestFullScreen();
+	
+</s>
 
 ## Code 
 
-Code lies in the value of `href` attribute of the `<a>` element:
+Code lies in the value of `href` attribute of the `<a>` element for **Browser Bookmark** version:
 	
 	javascript: (function() {
 	    var p = document.getElementById('video').getElementsByTagName('video')[0];
@@ -49,6 +54,8 @@ Code lies in the value of `href` attribute of the `<a>` element:
 
 - 20170615: automatically start playing while removing the ad.
 - 20170623: automatically enter fullscreen mode while removing the ad.
+- 20170713: remove "automatically enter fullscreen mode while removing the ad."
+- 20170714: publish on Chrome Web Store.
 
 ## Acknowledgment
 
