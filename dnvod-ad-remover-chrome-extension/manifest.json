@@ -3,8 +3,8 @@
 
   "name": "Dnvod Ad Remover",
   "short_name": "NoDnAd",
-  "description": "This extension removes ads from dnvod.tv video pages",
-  "version": "1.0",
+  "description": "无痕移除多瑙影院广告！Removes ads from dnvod.tv video pages.",
+  "version": "1.1",
 
   "icons": {
       "128": "icon-128.png",
@@ -15,7 +15,9 @@
       "js": [ "dnvodAdRemover.js" ],
       "matches": [ 
         "http://dnvod.tv/*",
-        "http://www.dnvod.tv/*"
+        "http://www.dnvod.tv/*",
+        "https://dnvod.tv/*",
+        "https://www.dnvod.tv/*"
       ],
       "run_at": "document_end"
   } ],
