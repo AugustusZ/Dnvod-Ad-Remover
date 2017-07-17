@@ -3,7 +3,7 @@
 
   "name": "Dnvod Ad Remover",
   "short_name": "NoDnAd",
-  "description": "无痕移除多瑙影院广告！Removes ads from dnvod.tv video pages.",
+  "description": "清除多瑙影院广告！Removes ads from dnvod.tv.",
   "version": "1.2",
 
   "icons": {

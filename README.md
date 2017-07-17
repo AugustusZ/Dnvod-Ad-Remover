@@ -7,55 +7,14 @@ This is a tool created to remove ad on www.dnvod.tv.
 
 There are two versions: **Chrome Extension** and **Browser Bookmark**. Please go see them on [this page](https://augustusz.github.io/Dnvod-Ad-Remover/).
 
-## Explanation
-
-This tool does <s>three</s> two things.
-
-### 1. Remove Ad
-
-
-You can find the ad in the DOM element `div.HTML5-only`. So my approach is simply removing its child element `div.ads-control` from it:
-
-	var parentNode = document.getElementsByClassName("HTML5-only")[0];
-	var childNode = document.getElementsByClassName("ads-control")[0];
-	parentNode.removeChild(childNode);
-
-A more concise version:
-
-	document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);
-	
-### 2. Autoplay
-
-It starts playing the video so that users do not have to click the play button by their own:
-
-	document.getElementById('video').getElementsByTagName('video')[0].play();
-
-<s>
-### 3. Fullscreen
-
-It makes the player enter fullscreen mode so that users do not have to click the fullscreen button by their own:
-
-	document.getElementById('video').getElementsByTagName('video')[0].webkitRequestFullScreen();
-	
-</s>
-
-## Code 
-
-Code lies in the value of `href` attribute of the `<a>` element for **Browser Bookmark** version:
-	
-	javascript: (function() {
-	    var p = document.getElementById('video').getElementsByTagName('video')[0];
-	    p.play();
-	    p.webkitRequestFullScreen();
-	    document.getElementsByClassName('HTML5-only')[0].removeChild(document.getElementsByClassName('ads-control')[0]);
-	})();
-	
-## Update
+## Updates
 
 - 20170615: automatically start playing while removing the ad.
 - 20170623: automatically enter fullscreen mode while removing the ad.
 - 20170713: remove "automatically enter fullscreen mode while removing the ad."
-- 20170714: publish on Chrome Web Store.
+- 20170714: publish v1.0 on Chrome Web Store.
+- 20170715: publish v1.1 on Chrome Web Store: working for HTTPS
+- 20170717: publish v1.2 on Chrome Web Store: removing all ads
 
 ## Acknowledgment
 

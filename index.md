@@ -3,23 +3,30 @@
 ![](assets/promo1.jpg)
 ![](assets/promo2.jpg)
 
-It removes the ads from dnvod.tv video pages. There are two versions of it and you can choose whichever you prefer:
+This Chrome Extension removes all ads from dnvod.tv pages. 
 
-1. [**Chrome Extension**](https://chrome.google.com/webstore/detail/dnvod-ad-remover/iogpccakojnbjlglnkbmkgafekcokcjk?hl=en-US) (*Recommended*)
-2. Browser Bookmark (See below sections for details)
+https://www.youtube.com/watch?v=AfEonBBrtIM
 
----
-
-# Chrome Extension Version
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XLOxEA0Fxrk?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AfEonBBrtIM?rel=0" frameborder="0" allowfullscreen></iframe>
 
 - [Extension on Chrome Web Store](https://chrome.google.com/webstore/detail/dnvod-ad-remover/iogpccakojnbjlglnkbmkgafekcokcjk?hl=en-US)
 - [Repository on GitHub](dnvod-ad-remover-chrome-extension)
 
+<a name="Note"></a>
+
+## Note
+
+1. Since the way an ad is shown is subject to change, this tool might not work forever. Make good use of it before it's gone.
+2. This tool only works with HTML5 player. So if it did not work in your Chrome,
+	- Update Chrome to the latest version and make sure to disable Flash player so that HTML5 player is automatically enabled and this tool would work hopefully. The way to disable Flash in Chrome: Go to **Settings** | Show **Advanced** settings | **Privacy and security** | **Content settings** | **Flash**, OR simply search "Flash" in **Settings**, then **Block sites from running Flash** and restart your browser. 
+		![](assets/block-flash.png)
+	- OR install Google Chrome Canary.
+
 ---
 
 # Browser Bookmark Version
+
+There is also a Browser Bookmark version of it. It only has the minimal ability to remove dnvod.tv ads.
 
 ## How to install it?
 
@@ -34,16 +41,6 @@ It removes the ads from dnvod.tv video pages. There are two versions of it and y
 Just click the bookmark, whenever you need to remove the ad from a dnvod video page.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fHzvfbwpcxU?rel=0" frameborder="0" allowfullscreen></iframe>
-	
-<a name="Note"></a>
-
-## Note
-
-1. Since the way an ad is shown is subject to change, this tool might not work forever. Make good use of it before it's gone.
-2. This tool only works with HTML5 player. So if it did not work in your Chrome,
-	- Update Chrome to the latest version and make sure to disable Flash player so that HTML5 player is automatically enabled and this tool would work hopefully. The way to disable Flash in Chrome: Go to **Settings** | Show **Advanced** settings | **Privacy and security** | **Content settings** | **Flash**, OR simply search "Flash" in **Settings**, then **Block sites from running Flash** and restart your browser. 
-		![](assets/block-flash.png)
-	- OR install Google Chrome Canary.
 
 ## Acknowledgment
 
