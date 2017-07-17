@@ -19,7 +19,6 @@ There are two versions: **Chrome Extension** and **Browser Bookmark**. Please go
 ## Acknowledgment
 
 Thanks to [JBWKZsf](https://github.com/JBWKZsf) and [kevinscake](https://github.com/kevinscake) for testing!
-This tool is inspired by [YouKu HTML5 Player](http://zythum.free.bg/youkuhtml5playerbookmark/). 
 
 ## License 
 
