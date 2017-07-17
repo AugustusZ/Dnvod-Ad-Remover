@@ -8,11 +8,20 @@ document.addEventListener('DOMNodeInserted', function (event) {
 		});
 	}
 
-	// remove ad
+	// remove video ad
 	var parentNode = document.getElementsByClassName("HTML5-only")[0];
 	var childNode = document.getElementsByClassName("ads-control")[0];
 	if (parentNode && childNode) {
 		console.log('Removing ad');
 		parentNode.removeChild(childNode);
 	}
+
+	// remove homepage corner ad
+	var parentNode = document.getElementsByClassName("whole")[0];
+	var childNode = document.getElementById("msg_winw");
+	if (parentNode && childNode) {
+		console.log('Removing ad');
+		parentNode.removeChild(childNode);
+	}
+
 });
