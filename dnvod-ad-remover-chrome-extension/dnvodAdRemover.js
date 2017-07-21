@@ -8,6 +8,7 @@ var adSelectors = [
 	".ggw-l", // remove detail page banner ad
 	".bfq-r", // remove play page next-to-video ad
 	".ads-control", // remove play page video-covering ad
+	".button-toggle", // remove play page video corner VIP ad
 	".gg" // remove homepage list tail ad
 ];
 
