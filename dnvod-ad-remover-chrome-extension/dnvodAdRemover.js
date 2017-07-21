@@ -48,18 +48,18 @@ document.addEventListener('DOMNodeInserted', (event) => {
 		// autoplay
 		$('#ckplayer_a1').get(0).play();
 
-		// restyle video player
-		Object.keys(styles).map((selector) => {
-			document.querySelectorAll(selector).forEach((element) => {
-				$(selector).css(styles[selector]);
-			});
-		});
-
 		// center video player
 		if (!hasScrolledBefore) {
 			window.scrollTo(0, 0.5 * ($('#ckplayer_a1').height() - window.innerHeight));
 			hasScrolledBefore = true;
 		}	
+	});
+
+	// restyle video player
+	Object.keys(styles).map((selector) => {
+		document.querySelectorAll(selector).forEach((element) => {
+			$(selector).css(styles[selector]);
+		});
 	});
 
 	// remove ads
