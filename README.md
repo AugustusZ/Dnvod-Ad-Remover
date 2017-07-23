@@ -15,6 +15,7 @@ There are two versions: **Chrome Extension** and **Browser Bookmark**. Please go
 - 20170714: publish v1.0 on Chrome Web Store.
 - 20170715: publish v1.1 on Chrome Web Store: working for HTTPS
 - 20170717: publish v1.2 on Chrome Web Store: removing all ads
+- 20170723: publish v1.3 on Chrome Web Store: restyling video page
 
 ## Acknowledgment
 
