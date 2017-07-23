@@ -42,11 +42,13 @@ var styles = {
 };
 
 var hasScrolledBefore = false;	
+var dblcount = 0;
 
-document.addEventListener('DOMNodeInserted', (event) => {
-	$('#ckplayer_a1').one('canplay', _ => {
+window.onload = _ => {
+	var player = $('#ckplayer_a1');
+	player.on('canplay', _ => {
 		// autoplay
-		$('#ckplayer_a1').get(0).play();
+		player.get(0).play();
 
 		// center video player
 		if (!hasScrolledBefore) {
@@ -55,6 +57,12 @@ document.addEventListener('DOMNodeInserted', (event) => {
 		}	
 	});
 
+	player.dblclick(_ => {
+		console.log(`double clicked x ${dblcount++}`)
+	});
+};
+
+document.addEventListener('DOMNodeInserted', (event) => {
 	// restyle video player
 	Object.keys(styles).map((selector) => {
 		document.querySelectorAll(selector).forEach((element) => {
