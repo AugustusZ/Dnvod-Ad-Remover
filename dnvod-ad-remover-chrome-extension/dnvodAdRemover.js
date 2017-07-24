@@ -42,32 +42,59 @@ var styles = {
 };
 
 var hasScrolledBefore = false;	
-var dblcount = 0;
 
 window.onload = _ => {
-	var player = $('#ckplayer_a1');
+	var player = getPlayer();
 	player.on('canplay', _ => {
 		// autoplay
 		player.get(0).play();
 
 		// center video player
 		if (!hasScrolledBefore) {
-			window.scrollTo(0, 0.5 * ($('#ckplayer_a1').height() - window.innerHeight));
+			window.scrollTo(0, 0.5 * (player.height() - window.innerHeight));
 			hasScrolledBefore = true;
 		}	
-	});
 
-	player.dblclick(_ => {
-		console.log(`double clicked x ${dblcount++}`)
+		// add <click : play/pause>
+		player.on('click', _ => {
+			togglePlayer(player);
+		});
+
+		// add keypress shortcuts
+		$(document).keyup((e) => {
+			console.log(e.which);
+			// 37: <--
+			// 39: -->
+			if (e.which === getCharCode(' ') || e.which === getCharCode('\r')) {
+				togglePlayer(player);
+			}
+		});
 	});
 };
 
-document.addEventListener('DOMNodeInserted', (event) => {
+// disable "pressing spacebar to scroll page"
+window.addEventListener('keydown', (e) => {
+	if (e.keyCode == 32 && e.target == document.body) {
+		e.preventDefault();
+	}
+});
+
+document.addEventListener('DOMNodeInserted', _ => {
 	// restyle video player
 	Object.keys(styles).map((selector) => {
 		document.querySelectorAll(selector).forEach((element) => {
 			$(selector).css(styles[selector]);
 		});
+	});
+
+	// add <double click : toggle fullscreen>
+	var player = getPlayer();
+	player.dblclick(_ => {
+		if (document.webkitIsFullScreen) {
+			document.webkitExitFullscreen();
+		} else {
+			player.get(0).webkitRequestFullscreen();
+		}
 	});
 
 	// remove ads
@@ -77,3 +104,19 @@ document.addEventListener('DOMNodeInserted', (event) => {
 		});
 	});
 });
+
+togglePlayer = (player) => {
+	if (player.get(0).paused) {
+		player.get(0).play();
+	} else {
+		player.get(0).pause();
+	}
+}
+
+getPlayer = _ => {
+	return $('#ckplayer_a1');
+}
+
+getCharCode = (ch) => {
+	return ch.charCodeAt(0);
+}
