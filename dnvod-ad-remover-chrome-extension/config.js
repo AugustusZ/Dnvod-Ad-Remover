@@ -18,7 +18,7 @@ var adSelectors = [
 
 var styles = {
 	'.bfq': {
-		'height': '743px',
+		'height': '740px',
 		'margin-top': '0',
 		'z-index': '9999',
 		'position': 'relative'
@@ -41,5 +41,21 @@ var styles = {
 	},
 	'#video': {
 		'margin-top': '0'
+	},
+	'kbd': {
+		'font': '11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace',
+	    'display': 'inline-block',
+	    'padding': '3px 5px',
+	    'font-size': '11px',
+	    'line-height': '10px',
+	    'color': '#444d56',
+	    'vertical-align': 'middle',
+	    'background-color': '#fafbfc',
+	    'border': 'solid 1px #c6cbd1',
+	    'border-bottom-color': '#959da5',
+	    'border-radius': '3px',
+	    'box-shadow': 'inset 0 -1px 0 #959da5'
 	}
 };
+
+var tips = '【进入/退出全屏：双击】【暂停/播放：<kbd>space</kbd> 或 <kbd>enter</kbd>】【前进 8s：<kbd>&rarr;</kbd>】【后退 8s：<kbd>&larr;</kbd>】';

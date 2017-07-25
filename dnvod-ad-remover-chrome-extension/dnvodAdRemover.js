@@ -1,7 +1,7 @@
 var hasScrolledBefore = false;	
 
 window.onload = _ => {
-	var player = getPlayer();
+	var player = $('#ckplayer_a1');
 	var playerElement = player.get(0);
 
 	player.on('canplay', _ => {
@@ -15,6 +15,15 @@ window.onload = _ => {
 		}	
 	});
 
+	// add <double click : toggle fullscreen>
+	player.dblclick(_ => {
+		if (document.webkitIsFullScreen) {
+			document.webkitExitFullscreen();
+		} else {
+			playerElement.webkitRequestFullscreen();
+		}
+	});
+
 	// add keypress shortcuts
 	$(document).keyup((e) => {
 		if (e.which == 32 || e.which == 13) { // 32: spacebar, 13: enter/return
@@ -25,6 +34,9 @@ window.onload = _ => {
 			playerElement.currentTime += jumpLength;
 		}
 	});
+	
+	// show tips
+	$('#bfy_title>span:first').html(tips);
 };
 
 // disable "pressing spacebar to scroll page"
@@ -34,22 +46,12 @@ window.addEventListener('keydown', (e) => {
 	}
 });
 
-document.addEventListener('DOMNodeInserted', _ => {
+document.addEventListener('DOMNodeInserted', (event) => {
 	// restyle video player
 	Object.keys(styles).map((selector) => {
 		document.querySelectorAll(selector).forEach((element) => {
 			$(selector).css(styles[selector]);
 		});
-	});
-
-	// add <double click : toggle fullscreen>
-	var player = getPlayer();
-	player.dblclick(_ => {
-		if (document.webkitIsFullScreen) {
-			document.webkitExitFullscreen();
-		} else {
-			player.get(0).webkitRequestFullscreen();
-		}
 	});
 
 	// remove ads
@@ -59,7 +61,3 @@ document.addEventListener('DOMNodeInserted', _ => {
 		});
 	});
 });
-
-getPlayer = _ => {
-	return $('#ckplayer_a1');
-}
