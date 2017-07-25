@@ -3,8 +3,8 @@
 
   "name": "Dnvod Ad Remover",
   "short_name": "NoDnAd",
-  "description": "增强多瑙体验，清除多瑙广告！Enhances dnvod and removes its ads",
-  "version": "1.4",
+  "description": "增强多瑙体验，清除多瑙广告！",
+  "version": "1.4.2",
 
   "icons": {
       "128": "icon-128.png",

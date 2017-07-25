@@ -1,4 +1,4 @@
-var jumpLength = 8;
+var jumpLength = 10;
 
 var adSelectors = [
 	"#myaudient2", // remove homepage header banner ad
@@ -36,6 +36,10 @@ var styles = {
 		'width': '1240px',
 		'height': '697px'
 	},
+	'embed#ckplayer_a1': { // for Flash
+		'width': '1240px',
+		'height': '697px'
+	},
 	'#bfy_title': {
 		'padding-left': '10px',
 		'margin-top': '705px',
@@ -66,4 +70,4 @@ var styles = {
 	}
 };
 
-var tips = '【进入/退出全屏：双击】【暂停/播放：<kbd>space</kbd> 或 <kbd>enter</kbd>】【前进 8s：<kbd>&rarr;</kbd>】【后退 8s：<kbd>&larr;</kbd>】';
+var tips = `【进入/退出全屏：双击】【暂停/播放：<kbd>space</kbd> 或 <kbd>enter</kbd>】【前进 ${jumpLength}s：<kbd>&rarr;</kbd>】【后退 ${jumpLength}s：<kbd>&larr;</kbd>】`;
