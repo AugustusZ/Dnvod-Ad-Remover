@@ -4,9 +4,22 @@
 
 This Chrome Extension removes all ads from dnvod.tv pages. 
 
-https://www.youtube.com/watch?v=AfEonBBrtIM
+## Features
+
+Demo: https://www.youtube.com/watch?v=AfEonBBrtIM
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmspuJlGAfk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+- Removing ALL ads
+- Shortcuts for playback
+	- double click: enter / exit full-screen
+	- <kbd>space</kbd> OR <kbd>enter</kbd>: play / pause
+	- <kbd>←</kbd>/<kbd>→</kbd>: Jump 8 seconds back / forward
+- Autoplay 
+	- current episode when loaded
+	- next episode (coming soon)
+
+## Links
 
 - [Extension on Chrome Web Store](https://chrome.google.com/webstore/detail/dnvod-ad-remover/iogpccakojnbjlglnkbmkgafekcokcjk?hl=en-US)
 - [Repository on GitHub](dnvod-ad-remover-chrome-extension)
