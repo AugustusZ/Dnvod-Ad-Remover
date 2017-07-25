@@ -3,7 +3,7 @@
 
   "name": "Dnvod Ad Remover",
   "short_name": "NoDnAd",
-  "description": "清除多瑙影院广告！Removes ads from dnvod.tv.",
+  "description": "增强多瑙体验，清除多瑙广告！Enhances dnvod and removes its ads",
   "version": "1.4",
 
   "icons": {
@@ -12,7 +12,7 @@
   },
 
   "content_scripts": [ {
-      "js": [ "jquery-3.2.1.slim.min.js", "dnvodAdRemover.js" ],
+      "js": [ "config.js", "jquery-3.2.1.slim.min.js", "dnvodAdRemover.js" ],
       "matches": [ 
         "http://dnvod.tv/*",
         "http://www.dnvod.tv/*",
