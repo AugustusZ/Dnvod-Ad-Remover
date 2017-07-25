@@ -28,16 +28,24 @@ var styles = {
 		'height': '697px',
 		'padding': '0'
 	},
+	'#a1': {
+		'width': '1240px',
+		'height': '697px'
+	},
 	'#ckplayer_a1': {
 		'width': '1240px',
 		'height': '697px'
 	},
 	'#bfy_title': {
-		'margin-left': '10px',
+		'padding-left': '10px',
 		'margin-top': '705px',
-		'width': '1235px',
+		'width': '1230px',
 		'z-index': '0',
 		'position': 'absolute'
+	},
+	'.button-vip': {
+		'color': 'red',
+		'margin-top': '0'
 	},
 	'#video': {
 		'margin-top': '0'

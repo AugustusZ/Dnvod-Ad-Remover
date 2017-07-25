@@ -36,7 +36,7 @@ window.onload = _ => {
 	});
 	
 	// show tips
-	$('#bfy_title>span:first').html(tips);
+	$('.button-vip').prepend(tips);
 };
 
 // disable "pressing spacebar to scroll page"
