@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "多瑙纯良 A Better Dnvod: Enhancer & Ad Remover",
+  "name": "多瑙纯良 A Better Dnvod: Cleaner & Enhancer",
   "short_name": "BetterDnvod",
-  "description": "「纯」：清除多瑙广告  |  「良」：增强多瑙体验",
+  "description": "纯：清除多瑙广告 | 良：增强多瑙体验 （原 Dnvod Ad Remover）",
   "version": "1.5",
 
   "icons": {
@@ -12,7 +12,7 @@
   },
 
   "content_scripts": [{
-      "js": [ "config.js", "jquery-3.2.1.slim.min.js", "adRemover.js" ],
+      "js": [ "config.js", "jquery-3.2.1.slim.min.js", "cleaner.js" ],
       "matches": [ 
         "http://dnvod.tv/*",
         "http://www.dnvod.tv/*",

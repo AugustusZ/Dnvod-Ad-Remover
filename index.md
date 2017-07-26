@@ -1,4 +1,4 @@
-# Dnvod Ad Remover
+# A Better Dnvod (Dnvod Ad Remover)
 
 ![](assets/promo.jpg)
 
