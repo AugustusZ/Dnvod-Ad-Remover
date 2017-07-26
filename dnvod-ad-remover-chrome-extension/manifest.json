@@ -26,7 +26,11 @@
         "http://dnvod.tv/Movie/Readyplay*",
         "http://www.dnvod.tv/Movie/Readyplay*",
         "https://dnvod.tv/Movie/Readyplay*",
-        "https://www.dnvod.tv/Movie/Readyplay*"
+        "https://www.dnvod.tv/Movie/Readyplay*",
+        "http://dnvod.tv/movie/Readyplay*",
+        "http://www.dnvod.tv/movie/Readyplay*",
+        "https://dnvod.tv/movie/Readyplay*",
+        "https://www.dnvod.tv/movie/Readyplay*"
       ],
       "run_at": "document_end"
   }],
