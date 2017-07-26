@@ -1,6 +1,7 @@
 var jumpLength = 10;
+var tips = `【进入/退出全屏：双击】【暂停/播放：<kbd>space</kbd> 或 <kbd>enter</kbd>】【前进 ${jumpLength}s：<kbd>&rarr;</kbd>】【后退 ${jumpLength}s：<kbd>&larr;</kbd>】`;
 
-var adSelectors = [
+var adSelectors = [ // for adRemover.js
 	"#myaudient2", // remove homepage header banner ad
 	"#msg_winw", // remove all pages' corner window ad
 	".tgg", // remove homepage next-to-logo ad
@@ -16,7 +17,7 @@ var adSelectors = [
 	".gg" // remove homepage list tail ad
 ];
 
-var styles = {
+var styles = { // for enhancer.js
 	'.bfq': {
 		'height': '740px',
 		'margin-top': '0',
@@ -69,5 +70,3 @@ var styles = {
 	    'box-shadow': 'inset 0 -1px 0 #959da5'
 	}
 };
-
-var tips = `【进入/退出全屏：双击】【暂停/播放：<kbd>space</kbd> 或 <kbd>enter</kbd>】【前进 ${jumpLength}s：<kbd>&rarr;</kbd>】【后退 ${jumpLength}s：<kbd>&larr;</kbd>】`;

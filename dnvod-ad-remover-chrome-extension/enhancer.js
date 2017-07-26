@@ -1,19 +1,12 @@
-var hasScrolledBefore = false;	
-
 window.onload = _ => {
 	var player = $('#ckplayer_a1');
 	var playerElement = player.get(0);
 
-	player.on('canplay', _ => {
-		// autoplay
-		playerElement.play();
+	// autoplay
+	playerElement.play();
 
-		// center video player
-		if (!hasScrolledBefore) {
-			window.scrollTo(0, 0.5 * (player.height() - window.innerHeight));
-			hasScrolledBefore = true;
-		}	
-	});
+	// scroll to center
+	window.scrollTo(0, 0.5 * (player.height() - window.innerHeight));
 
 	// add <double click : toggle fullscreen>
 	player.dblclick(_ => {
@@ -34,10 +27,12 @@ window.onload = _ => {
 			playerElement.currentTime += jumpLength;
 		}
 	});
-	
-	// show tips
-	$('.button-vip').prepend(tips);
 };
+
+// show tips
+$(document).ready(_ => {
+	$('.button-vip').prepend(tips);
+});
 
 // disable "pressing spacebar to scroll page"
 window.addEventListener('keydown', (e) => {
@@ -46,18 +41,11 @@ window.addEventListener('keydown', (e) => {
 	}
 });
 
+// restyle video player
 document.addEventListener('DOMNodeInserted', (event) => {
-	// restyle video player
 	Object.keys(styles).map((selector) => {
 		document.querySelectorAll(selector).forEach((element) => {
 			$(selector).css(styles[selector]);
-		});
-	});
-
-	// remove ads
-	adSelectors.map((selector) => {
-		document.querySelectorAll(selector).forEach((element) => {
-			element.parentElement.removeChild(element);
 		});
 	});
 });

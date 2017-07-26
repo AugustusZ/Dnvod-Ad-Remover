@@ -1,18 +1,18 @@
 {
   "manifest_version": 2,
 
-  "name": "Dnvod Ad Remover",
-  "short_name": "NoDnAd",
-  "description": "增强多瑙体验，清除多瑙广告！",
-  "version": "1.4.2",
+  "name": "多瑙纯良 A Better Dnvod: Enhancer & Ad Remover",
+  "short_name": "BetterDnvod",
+  "description": "「纯」：清除多瑙广告  |  「良」：增强多瑙体验",
+  "version": "1.5",
 
   "icons": {
       "128": "icon-128.png",
       "48": "icon-48.png"
   },
 
-  "content_scripts": [ {
-      "js": [ "config.js", "jquery-3.2.1.slim.min.js", "dnvodAdRemover.js" ],
+  "content_scripts": [{
+      "js": [ "config.js", "jquery-3.2.1.slim.min.js", "adRemover.js" ],
       "matches": [ 
         "http://dnvod.tv/*",
         "http://www.dnvod.tv/*",
@@ -20,10 +20,21 @@
         "https://www.dnvod.tv/*"
       ],
       "run_at": "document_end"
-  } ],
+  },{
+      "js": [ "enhancer.js" ],
+      "matches": [ 
+        "http://dnvod.tv/Movie/Readyplay*",
+        "http://www.dnvod.tv/Movie/Readyplay*",
+        "https://dnvod.tv/Movie/Readyplay*",
+        "https://www.dnvod.tv/Movie/Readyplay*"
+      ],
+      "run_at": "document_end"
+  }],
 
   "permissions": [
     "http://dnvod.tv/*",
-    "http://www.dnvod.tv/*"
+    "http://www.dnvod.tv/*",
+    "https://dnvod.tv/*",
+    "https://www.dnvod.tv/*"
   ]
 }
