@@ -12,6 +12,7 @@ There are two versions: **Chrome Extension** and **Browser Bookmark**. Please go
 
 ## Updates
 
+- 20170728: publish **v1.6** on Chrome Web Store: **autoplaying next**
 - 20170726: publish **v1.5** on Chrome Web Store: **renaming and refactoring**
 - 20170725: publish **v1.4** on Chrome Web Store: **adding playback shortcuts**
 - 20170723: publish **v1.3** on Chrome Web Store: **restyling video page**

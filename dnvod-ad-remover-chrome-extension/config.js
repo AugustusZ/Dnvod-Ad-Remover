@@ -17,6 +17,11 @@ var adSelectors = [ // for adRemover.js
 	".gg" // remove homepage list tail ad
 ];
 
+var playlistSelectors = [
+  	'.bfan-n>a',
+  	'.bfan-v>a'
+];
+
 var styles = { // for enhancer.js
 	'.bfq': {
 		'height': '740px',

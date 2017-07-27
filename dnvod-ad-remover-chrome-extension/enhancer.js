@@ -5,6 +5,13 @@ window.onload = _ => {
 	// autoplay
 	playerElement.play();
 
+	// autoplay next
+	player.on('ended', _ =>{
+		playlistSelectors.map((selector) => {
+			playNext(selector);
+		});
+    });
+
 	// scroll to center
 	window.scrollTo(0, 0.5 * (player.height() - window.innerHeight));
 
@@ -49,3 +56,14 @@ document.addEventListener('DOMNodeInserted', (event) => {
 		});
 	});
 });
+
+var playNext = (selector) => {
+	var anchors = $(selector);
+	var currentPageURI = decodeURIComponent(location.href).toLowerCase();
+  	anchors.each((index, element) => {
+  		var anchorURI = decodeURIComponent(element.href).toLowerCase();
+  		if (anchorURI === currentPageURI && index + 1 < anchors.length) {
+  			location.href = anchors[index + 1].href;
+  		}
+	});
+};

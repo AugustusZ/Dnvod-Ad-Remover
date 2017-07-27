@@ -17,7 +17,7 @@ Demo: https://www.youtube.com/watch?v=AfEonBBrtIM
 	- <kbd>←</kbd>/<kbd>→</kbd>: Jump 8 seconds back / forward
 - Autoplay 
 	- current episode when loaded
-	- next episode (coming soon)
+	- next episode
 
 ## Links
 
