@@ -18,8 +18,8 @@ var adSelectors = [ // for adRemover.js
 ];
 
 var playlistSelectors = [
-  	'.bfan-n>a',
-  	'.bfan-v>a'
+	'.bfan-n>a',
+	'.bfan-v>a'
 ];
 
 var styles = { // for enhancer.js
@@ -62,16 +62,16 @@ var styles = { // for enhancer.js
 	},
 	'kbd': {
 		'font': '11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace',
-	    'display': 'inline-block',
-	    'padding': '3px 5px',
-	    'font-size': '11px',
-	    'line-height': '10px',
-	    'color': '#444d56',
-	    'vertical-align': 'middle',
-	    'background-color': '#fafbfc',
-	    'border': 'solid 1px #c6cbd1',
-	    'border-bottom-color': '#959da5',
-	    'border-radius': '3px',
-	    'box-shadow': 'inset 0 -1px 0 #959da5'
+		'display': 'inline-block',
+		'padding': '3px 5px',
+		'font-size': '11px',
+		'line-height': '10px',
+		'color': '#444d56',
+		'vertical-align': 'middle',
+		'background-color': '#fafbfc',
+		'border': 'solid 1px #c6cbd1',
+		'border-bottom-color': '#959da5',
+		'border-radius': '3px',
+		'box-shadow': 'inset 0 -1px 0 #959da5'
 	}
 };
