@@ -10,18 +10,16 @@
 2. 你需要禁用 Flash
 
 ## 如何禁用 Chrome 浏览器里的 Flash？
-打开[浏览器的 Flash 设置页](chrome://settings/content/flash)后如图设置：
+打开**浏览器的 Flash 设置页**（复制这个地址到地址栏：`chrome://settings/content/flash`）后如图设置：
 
 ![](assets/block-flash.png)
 
 然后刷新一下刚才的视频页，广告就不见了！
 
 --
-如果暂时不想对所有网站禁用 Flash，你可以选择**只对多瑙影院网站（www.dnvod.tv）禁用 Flash**。
+如果暂时不想对所有网站禁用 Flash，你可以选择**只对多瑙影院网站（www.dnvod.tv）禁用 Flash**。具体方法是：
 
-具体方法是：
-
-1. 打开[浏览器的 Flash 设置页](chrome://settings/content/flash)
+1. 打开**浏览器的 Flash 设置页**（复制这个地址到地址栏：`chrome://settings/content/flash`）
 
 	![](assets/flash-settings-block-site-before.png)
 	

@@ -14,7 +14,7 @@ Demo: https://www.youtube.com/watch?v=AfEonBBrtIM
 - Shortcuts for playback
 	- double click: enter / exit full-screen
 	- <kbd>space</kbd> OR <kbd>enter</kbd>: play / pause
-	- <kbd>←</kbd>/<kbd>→</kbd>: Jump 8 seconds back / forward
+	- <kbd>←</kbd>/<kbd>→</kbd>: Jump 10 seconds back / forward
 - Autoplay 
 	- current episode when loaded
 	- next episode
