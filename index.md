@@ -21,8 +21,8 @@ Demo: https://www.youtube.com/watch?v=AfEonBBrtIM
 
 ## Links
 
-- [Extension on Chrome Web Store](https://chrome.google.com/webstore/detail/dnvod-ad-remover/iogpccakojnbjlglnkbmkgafekcokcjk?hl=en-US)
-- [Repository on GitHub](dnvod-ad-remover-chrome-extension)
+- [Extension](https://chrome.google.com/webstore/detail/dnvod-ad-remover/iogpccakojnbjlglnkbmkgafekcokcjk?hl=en-US) on Chrome Web Store
+- [Repository](https://github.com/AugustusZ/Dnvod-Ad-Remover) on GitHub
 
 <a name="Note"></a>
 

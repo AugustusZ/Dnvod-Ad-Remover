@@ -46,7 +46,7 @@
 3. Flash 已经属于被淘汰的互联网技术。相关新闻：
 	- [Flash已死：Adobe鼓励开发人员使用HTML5](http://tech.163.com/15/1202/05/B9QC8E2G000915BF.html)（2015年）
 	- [互联网告别Flash时代：Adobe宣布将于2020年正式停止开发和更新](http://money.163.com/17/0726/09/CQ8T30NH002580S6.html)（2017年）
-	- [人类终于告别Flash了](#)（2020年）（误
+	- [人类终于告别Flash了](https://augustusz.github.io/Dnvod-Ad-Remover/)（2020年）（误
 
 ## 致谢
 感谢 [@stellazyj](https://www.instagram.com/stellazyj/) 和 [@piecejnn](https://www.instagram.com/piecejnn/) 提交 bug！
