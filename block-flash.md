@@ -10,7 +10,13 @@
 2. 你需要禁用 Flash
 
 ## 如何禁用 Chrome 浏览器里的 Flash？
-打开**浏览器的 Flash 设置页**（复制这个地址到地址栏：`chrome://settings/content/flash`）后如图设置：
+打开**浏览器的 Flash 设置页**。打开方式有如下三种任君选择：
+
+1. 复制这个地址到地址栏：`chrome://settings/content/flash`，或者
+2. 依次打开 Settings | Show Advanced settings | Privacy and security | Content settings | Flash, 或者
+3. 在 Settings 里直接搜索 `Flash`
+
+然后如图设置：
 
 ![](assets/block-flash.png)
 
@@ -19,7 +25,7 @@
 --
 如果暂时不想对所有网站禁用 Flash，你可以选择**只对多瑙影院网站（www.dnvod.tv）禁用 Flash**。具体方法是：
 
-1. 打开**浏览器的 Flash 设置页**（复制这个地址到地址栏：`chrome://settings/content/flash`）
+1. 打开**浏览器的 Flash 设置页**（方法如上文所述）
 
 	![](assets/flash-settings-block-site-before.png)
 	

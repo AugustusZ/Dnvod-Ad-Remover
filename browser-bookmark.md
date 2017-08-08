@@ -22,7 +22,7 @@ Just click the bookmark, whenever you need to remove the ad from a dnvod video p
 
 1. Since the way an ad is shown is subject to change, this tool might not work forever. Make good use of it before it's gone.
 2. This tool only works with HTML5 player. So if it did not work in your Chrome,
-	- Update Chrome to the latest version and make sure to disable Flash player so that HTML5 player is automatically enabled and this tool would work hopefully. The way to disable Flash in Chrome: Go to **Settings** | Show **Advanced** settings | **Privacy and security** | **Content settings** | **Flash**, OR simply search "Flash" in **Settings**, then **Block sites from running Flash** and restart your browser. 
+	- Update Chrome to the latest version and make sure to disable Flash player so that HTML5 player is automatically enabled and this tool would work hopefully. The way to disable Flash in Chrome: Go to **Settings** | Show **Advanced** settings | **Privacy and security** | **Content settings** | **Flash**, OR simply search "Flash" in **Settings**, then **Block sites from running Flash** and restart your browser. (另有[中文版操作说明](https://augustusz.github.io/Dnvod-Ad-Remover/block-flash.html))
 		![](assets/block-flash.png)
 	- OR install Google Chrome Canary.
 
