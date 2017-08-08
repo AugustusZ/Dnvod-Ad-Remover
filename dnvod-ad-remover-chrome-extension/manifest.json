@@ -4,11 +4,16 @@
   "name": "多瑙纯良 A Better Dnvod",
   "short_name": "BetterDnvod",
   "description": "纯：清除多瑙广告 | 良：增强多瑙体验 （原 Dnvod Ad Remover）",
-  "version": "1.6",
+  "version": "1.6.2",
 
   "icons": {
       "128": "icon-128.png",
       "48": "icon-48.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon-48.png",
+    "default_title": "多瑙纯良"     // optional; shown in tooltip
   },
 
   "content_scripts": [{
