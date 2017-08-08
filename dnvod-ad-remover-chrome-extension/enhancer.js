@@ -39,6 +39,9 @@ window.onload = _ => {
 // show tips
 $(document).ready(_ => {
 	$('.button-vip').prepend(tips);
+	if ($('embed').length) {
+		$('.button-vip').prepend(help);
+	}
 });
 
 // disable "pressing spacebar to scroll page"

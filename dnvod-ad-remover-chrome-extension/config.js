@@ -1,5 +1,7 @@
 var jumpLength = 10;
-var tips = `【进入/退出全屏：双击】【暂停/播放：<kbd>space</kbd> 或 <kbd>enter</kbd>】【前进 ${jumpLength}s：<kbd>&rarr;</kbd>】【后退 ${jumpLength}s：<kbd>&larr;</kbd>】`;
+var helpUrl = 'https://augustusz.github.io/Dnvod-Ad-Remover/block-flash.html';
+var help = `<span style="color:yellow">安装插件仍有广告？尝试 <a href='${helpUrl}' target="_blank">&nbsp;禁用 Flash&nbsp;</a><span>`;
+var tips = `【全屏：双击】【暂停/播放：<kbd>space</kbd> 或 <kbd>enter</kbd>】【前进/后退 ${jumpLength}s：<kbd>&rarr;</kbd>/<kbd>&larr;</kbd>】`;
 
 var adSelectors = [ // for adRemover.js
 	"#myaudient2", // remove homepage header banner ad
