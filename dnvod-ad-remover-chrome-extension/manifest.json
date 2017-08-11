@@ -13,7 +13,7 @@
 
   "browser_action": {
     "default_icon": "icon-48.png",
-    "default_title": "多瑙纯良"     // optional; shown in tooltip
+    "default_title": "多瑙纯良"
   },
 
   "content_scripts": [{
