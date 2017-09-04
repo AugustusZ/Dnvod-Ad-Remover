@@ -4,19 +4,19 @@ var help = `<span style="color:yellow">安装插件仍有广告？尝试 <a href
 var tips = `【全屏：双击】【暂停/播放：<kbd>space</kbd> 或 <kbd>enter</kbd>】【前进/后退 ${jumpLength}s：<kbd>&rarr;</kbd>/<kbd>&larr;</kbd>】`;
 
 var adSelectors = [ // for adRemover.js
-	"#myaudient2", // remove homepage header banner ad
-	"#msg_winw", // remove all pages' corner window ad
-	".tgg", // remove homepage next-to-logo ad
-	".r-gg", // remove right squre ad
-	".ggw", // remove body banner ad
-	".ggw-l", // remove list page banner ad
-	".ggw-l", // remove detail page banner ad
-	".bfq-r", // remove play page next-to-video ad
-	".ads-control", // remove play page video-covering ad
-	".button-toggle", // remove play page video corner VIP ad
-	".clickbg", // remove side ads
-	".box", // remove side ads
-	".gg" // remove homepage list tail ad
+	"#myaudient2", // homepage header banner ad
+	"#w", // all pages' corner popup window ad
+	".tgg", // homepage next-to-logo ad
+	".r-gg", // right squre ad
+	".ggw", // body banner ad
+	".ggw-l", // list page banner ad
+	".ggw-l", // detail page banner ad
+	".bfq-r", // play page next-to-video ad
+	".ads-control", // play page video-covering ad
+	".button-toggle", // play page video corner VIP ad
+	".clickbg", // side ads
+	".box", // side ads
+	".gg" // homepage list tail ad
 ];
 
 var playlistSelectors = [
