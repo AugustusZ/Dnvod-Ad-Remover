@@ -56,28 +56,38 @@ $(document).ready(() => {
 });
 
 // disable "pressing spacebar to scroll page"
-window.addEventListener('keydown', (e) => {
-	if (e.keyCode == 32 && e.target == document.body) { // 32: spacebar
-		e.preventDefault();
+var onKeyDown = function (event) {
+	if (event.keyCode == 32 && event.target == document.body) { // 32: spacebar
+		event.preventDefault();
 	}
-});
+}
 
 // restyle video player
-document.addEventListener('DOMNodeInserted', (event) => {
+var updateStyle = function (event) {
 	Object.keys(styles).map((selector) => {
 		document.querySelectorAll(selector).forEach((element) => {
 			$(selector).css(styles[selector]);
 		});
 	});
-});
+};
+
+window.addEventListener('keydown', onKeyDown, false);
+
+document.addEventListener('DOMNodeInserted', updateStyle, false);
 
 var playNext = (selector) => {
 	var anchors = $(selector);
 	var currentPageURI = decodeURIComponent(location.href).toLowerCase();
 	anchors.each((index, element) => {
 		var anchorURI = decodeURIComponent(element.href).toLowerCase();
+		window.removeEventListener('keydown', onKeyDown, false);
 		if (anchorURI === currentPageURI && index + 1 < anchors.length) {
 			location.href = anchors[index + 1].href;
 		}
 	});
 };
+
+// wait for 2 secs to render the new style and then remove the event listener.
+setTimeout(() => {
+	document.removeEventListener('DOMNodeInserted', updateStyle, false);
+}, 2000);
