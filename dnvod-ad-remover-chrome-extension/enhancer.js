@@ -1,12 +1,9 @@
-window.onload = _ => {
+window.onload = () => {
 	var player = $('#ckplayer_a1');
 	var playerElement = player.get(0);
 
-	// autoplay
-	playerElement.play();
-
 	// autoplay next
-	player.on('ended', _ => {
+	player.on('ended', () => {
 		playlistSelectors.map((selector) => {
 			playNext(selector);
 		});
@@ -16,7 +13,7 @@ window.onload = _ => {
 	window.scrollTo(0, 0.5 * (player.height() - window.innerHeight));
 
 	// add <double click : toggle fullscreen>
-	player.dblclick(_ => {
+	player.dblclick(() => {
 		if (document.webkitIsFullScreen) {
 			document.webkitExitFullscreen();
 		} else {
@@ -34,10 +31,25 @@ window.onload = _ => {
 			playerElement.currentTime += jumpLength;
 		}
 	});
+
+	// remove pre-movie clip
+	var interval = setInterval(() => {
+		if (window['_vp'] && window['_vp']['pendingVideo'] && window['_vp']['pendingVideo'].length > 0) { 
+			clearInterval(interval);
+			var str = window['_vp']['pendingVideo'][0];
+			var videoUrl = str.slice(0, str.lastIndexOf('->'));
+			
+			// update with new URL and play it
+			player.attr('src', videoUrl);
+			playerElement.autoplay = true;
+			playerElement.load();
+		}
+		console.log('interval is going on');
+	}, 100);
 };
 
 // show tips
-$(document).ready(_ => {
+$(document).ready(() => {
 	$('.button-vip').prepend(tips);
 	if ($('embed').length) {
 		$('.button-vip').prepend(help);
