@@ -44,7 +44,6 @@ window.onload = () => {
 			playerElement.autoplay = true;
 			playerElement.load();
 		}
-		console.log('interval is going on');
 	}, 100);
 };
 
