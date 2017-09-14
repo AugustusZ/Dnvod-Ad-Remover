@@ -7,4 +7,4 @@ cleanerScripts.forEach(scriptName => {
 		this.remove();
 	};
 	(document.head || document.documentElement).appendChild(s);
-})
+});
