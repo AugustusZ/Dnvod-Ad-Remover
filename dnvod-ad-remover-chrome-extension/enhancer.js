@@ -34,11 +34,11 @@ window.onload = () => {
 
 	// remove pre-movie clip
 	var interval = setInterval(() => {
-		if (window['_vp'] && window['_vp']['pendingVideo'] && window['_vp']['pendingVideo'].length > 0) { 
+		if (window['_vp'] && window['_vp']['pendingVideo'] && window['_vp']['pendingVideo'].length > 0) {
 			clearInterval(interval);
 			var str = window['_vp']['pendingVideo'][0];
 			var videoUrl = str.slice(0, str.lastIndexOf('->'));
-			
+
 			// update with new URL and play it
 			player.attr('src', videoUrl);
 			playerElement.autoplay = true;
