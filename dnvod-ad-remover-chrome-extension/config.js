@@ -2,6 +2,12 @@ var jumpLength = 10;
 var helpUrl = 'https://augustusz.github.io/Dnvod-Ad-Remover/block-flash.html';
 var help = `<span style="color:yellow">安装插件仍有广告？尝试 <a href='${helpUrl}' target="_blank">&nbsp;禁用 Flash&nbsp;</a><span>`;
 var tips = `【全屏：双击】【暂停/播放：<kbd>space</kbd> 或 <kbd>enter</kbd>】【前进/后退 ${jumpLength}s：<kbd>&rarr;</kbd>/<kbd>&larr;</kbd>】`;
+var videoTemplate = (src, id) => `<video controls="controls" src=${src} id="${id}" autoplay></video>`;
+
+var vars = [
+	'_vp',
+	'pendingVideo'
+];
 
 var adSelectors = [ // for adRemover.js
 	"#myaudient2", // homepage header banner ad
@@ -24,7 +30,19 @@ var playlistSelectors = [
 	'.bfan-v>a'
 ];
 
+var playerSelectors = [
+	'#ckplayer_a0',
+	'#ckplayer_a1'
+];
+
+var playerStyles = {
+	'width': '1240px',
+	'height': '697px'
+};
+
 var styles = { // for enhancer.js
+	'#ckplayer_a1': playerStyles,
+	'embed#ckplayer_a1': playerStyles, // for Flash
 	'.bfq': {
 		'height': '740px',
 		'margin-top': '0',
@@ -37,14 +55,6 @@ var styles = { // for enhancer.js
 		'padding': '0'
 	},
 	'#a1': {
-		'width': '1240px',
-		'height': '697px'
-	},
-	'#ckplayer_a1': {
-		'width': '1240px',
-		'height': '697px'
-	},
-	'embed#ckplayer_a1': { // for Flash
 		'width': '1240px',
 		'height': '697px'
 	},
