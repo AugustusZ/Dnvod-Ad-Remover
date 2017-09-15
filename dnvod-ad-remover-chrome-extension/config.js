@@ -10,8 +10,9 @@ var vars = [
 ];
 
 var adSelectors = [ // for adRemover.js
+	"#a2", // homepage BIG banner ad
 	"#myaudient2", // homepage header banner ad
-	"#w", // all pages' corner popup window ad
+	"#z", // all pages' corner popup window ad
 	".tgg", // homepage next-to-logo ad
 	".r-gg", // right squre ad
 	".ggw", // body banner ad
