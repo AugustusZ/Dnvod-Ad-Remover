@@ -17,7 +17,7 @@
   },
 
   "content_scripts": [{
-      "js": [ "injectCleaner.js"],
+      "js": [ "helper.js", "injectCleaner.js"],
       "matches": [ 
         "*://*.dnvod.tv/*"
       ],
@@ -34,5 +34,5 @@
     "*://*.dnvod.tv/*"
   ],
 
-  "web_accessible_resources": [ "enhancer.js",  "config.js", "jquery-3.2.1.slim.min.js", "cleaner.js"]
+  "web_accessible_resources": [ "enhancer.js", "cleaner.js", "config.js", "jquery-3.2.1.slim.min.js"]
 }
