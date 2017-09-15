@@ -12,6 +12,7 @@ There are two versions: **Chrome Extension** and **Browser Bookmark**. Please go
 
 ## Updates
 
+- 20170914: publish **v1.7** on Chrome Web Store: **anti-anti-extension**
 - 20170728: publish **v1.6** on Chrome Web Store: **autoplaying next**
 - 20170726: publish **v1.5** on Chrome Web Store: **renaming and refactoring**
 - 20170725: publish **v1.4** on Chrome Web Store: **adding playback shortcuts**
@@ -25,9 +26,9 @@ There are two versions: **Chrome Extension** and **Browser Bookmark**. Please go
 
 ## Acknowledgment
 
-Thanks to [JBWKZsf](https://github.com/JBWKZsf), [kevinscake](https://github.com/kevinscake), Stella Zeng, Xixi Huang, and Ziyu Cheng for testing! 
+Thanks to [JBWKZsf](https://github.com/JBWKZsf), [Kevin Huang](https://github.com/kevinscake), Stella Zeng, Xixi Huang, and Ziyu Cheng for testing! 
 
-Thanks to Ziyu Cheng for his technical supports! 
+Thanks to [Ziyu Cheng](https://github.com/Ziyu-Cheng) and [Sri Harsha](https://github.com/applecool) for their technical supports! 
 
 ## License 
 
