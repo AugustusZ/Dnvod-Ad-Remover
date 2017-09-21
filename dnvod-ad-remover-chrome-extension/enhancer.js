@@ -9,11 +9,17 @@ window.onload = () => {
 
 			// replace video element
 			var player = $(playerSelectors[1]);
+			player.parent().append(loaderHtml);
 			player.parent().append(videoTemplate(videoUrl, playerSelectors[0].slice(1)));
 			player.remove();
 			player = $(playerSelectors[0]);
 			player.css(playerStyles);
 			var playerElement = player.get(0);
+
+			player.on('canplay', () => {
+				// remove loader
+				$('#loading').remove();
+			});
 
 			// autoplay next
 			player.on('ended', () => {
