@@ -12,6 +12,7 @@ There are two versions: **Chrome Extension** and **Browser Bookmark**. Please go
 
 ## Updates
 
+- 20170921: publish **v1.8** on Chrome Web Store: **adding loading indicator**
 - 20170914: publish **v1.7** on Chrome Web Store: **anti-anti-extension**
 - 20170728: publish **v1.6** on Chrome Web Store: **autoplaying next**
 - 20170726: publish **v1.5** on Chrome Web Store: **renaming and refactoring**
