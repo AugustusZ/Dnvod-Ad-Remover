@@ -1,0 +1,77 @@
+#ckplayer_a1 {
+  width: 1240px;
+  height: 697px;
+}
+
+embed#ckplayer_a1 {
+  /* for flash*/
+  width: 1240px;
+  height: 697px;
+}
+
+.bfq {
+  height: 740px;
+  margin-top: 0;
+  z-index: 9999;
+  position: relative;
+}
+
+.bfq-l {
+  width: 1240px;
+  height: 697px;
+  padding: 0;
+}
+
+#a1 {
+  width: 1240px;
+  height: 697px;
+}
+
+#bfy_title {
+  padding-left: 10px;
+  margin-top: 705px;
+  width: 1230px;
+  z-index: 0;
+  position: absolute;
+}
+
+.button-vip {
+  color: red;
+  margin-top: 0;
+}
+
+#video {
+  margin-top: 0;
+}
+
+kbd {
+  font: 11px Consolas, Menlo, Courier, monospace;
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  margin-bottom: 4px;
+}
+
+video#video::-internal-media-controls-download-button {
+  display: initial !important;
+}
+
+video#video::-webkit-media-controls-enclosure {
+  overflow: visible !important;
+}
+
+video::-webkit-media-controls-panel {
+  width: 1240px !important;
+}
+
+.whole .clear {
+  display: none;
+}

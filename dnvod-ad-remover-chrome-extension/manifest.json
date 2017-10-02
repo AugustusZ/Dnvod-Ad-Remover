@@ -3,12 +3,12 @@
 
   "name": "多瑙纯良 A Better Dnvod",
   "short_name": "BetterDnvod",
-  "description": "纯：清除多瑙广告 | 良：增强多瑙体验 （原 Dnvod Ad Remover）",
-  "version": "1.8",
+  "description": "纯：清除多瑙广告 | 良：增强多瑙体验",
+  "version": "1.9",
 
   "icons": {
-      "128": "icon-128.png",
-      "48": "icon-48.png"
+    "128": "icon-128.png",
+    "48": "icon-48.png"
   },
 
   "browser_action": {
@@ -16,23 +16,26 @@
     "default_title": "多瑙纯良"
   },
 
-  "content_scripts": [{
-      "js": [ "helper.js", "injectCleaner.js"],
-      "matches": [ 
-        "*://*.dnvod.tv/*"
-      ],
+  "content_scripts": [
+    {
+      "js": ["helper.js", "injectCleaner.js"],
+      "matches": ["*://*.dnvod.tv/*"],
       "run_at": "document_end"
-  },{
-      "js": [ "injectEnhancer.js" ],
-      "matches": [ 
-        "*://*.dnvod.tv/*/*lay*"
-      ],
+    },
+    {
+      "js": ["injectEnhancer.js"],
+      "matches": ["*://*.dnvod.tv/*/*lay*"],
       "run_at": "document_end"
-  }],
-
-  "permissions": [
-    "*://*.dnvod.tv/*"
+    }
   ],
 
-  "web_accessible_resources": [ "enhancer.js", "cleaner.js", "config.js", "jquery-3.2.1.slim.min.js"]
+  "permissions": ["*://*.dnvod.tv/*"],
+
+  "web_accessible_resources": [
+    "enhancer.js",
+    "cleaner.js",
+    "config.js",
+    "jquery-3.2.1.slim.min.js",
+    "style.css"
+  ]
 }

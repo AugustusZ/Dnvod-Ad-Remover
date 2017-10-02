@@ -1,1 +1,2 @@
 inject(enhancerScripts);
+inject(stylesheets);
